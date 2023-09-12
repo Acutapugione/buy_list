@@ -1,0 +1,14 @@
+{% extends '__base.html' %}
+
+{% block content %}
+<div class="menu">
+  <ul>
+    <li>
+      <a href="{{ url_for('join') }}"> Fill form to get product </a>
+    </li>
+    <li>
+      <a href="{{ url_for('participants') }}"> Check buyers list </a>
+    </li>
+  </ul>
+</div>
+{% endblock %}

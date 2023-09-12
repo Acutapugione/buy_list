@@ -1,0 +1,36 @@
+{% extends '__base.html' %}
+
+{% block content %}
+
+
+<table class="table table-dark table-striped">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Country
+        </th>
+        <th>
+            Phone
+        </th>
+    </tr>
+{% for item in participants %}
+    
+    <tr>
+        {% for field in item %}
+        <td>
+            {{ field }}
+        </td>
+        {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+
+{% endblock %}
